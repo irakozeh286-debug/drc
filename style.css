@@ -1,0 +1,427 @@
+/* ===================================
+   GOOGLE FONT
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f1ea;
+    color:#333;
+    line-height:1.8;
+}
+
+/* ===================================
+   HERO SECTION
+=================================== */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    width:85%;
+    max-width:900px;
+}
+
+.hero h3{
+    color:#ffd700;
+    font-size:22px;
+    letter-spacing:4px;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    color:white;
+    font-family:'Playfair Display',serif;
+    font-size:65px;
+    margin-bottom:25px;
+}
+
+.hero p{
+    color:white;
+    font-size:20px;
+    margin-bottom:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 40px;
+    background:#0057b8;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ffd700;
+    color:black;
+}
+
+/* ===================================
+   NAVIGATION
+=================================== */
+
+nav{
+    position:sticky;
+    top:0;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#0057b8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#0057b8;
+}
+
+/* ===================================
+   BOOK PAGE
+=================================== */
+
+.page{
+    width:80%;
+    max-width:1000px;
+    margin:80px auto;
+    padding:70px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.page h2{
+    color:#b8860b;
+    margin-bottom:10px;
+    font-size:18px;
+    letter-spacing:2px;
+}
+
+.page h1{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    margin-bottom:25px;
+    color:#003366;
+}
+
+.page h3{
+    margin-top:25px;
+    margin-bottom:10px;
+    color:#0057b8;
+}
+
+.page p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.page ul{
+    margin-left:25px;
+}
+
+.page li{
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.page ol{
+    margin-left:30px;
+}
+
+.page ol li{
+    margin-bottom:15px;
+    font-size:20px;
+}
+
+/* ===================================
+   BOOK EFFECT
+=================================== */
+
+.page{
+    position:relative;
+}
+
+.page::before{
+    content:"";
+    position:absolute;
+    left:-12px;
+    top:15px;
+    width:12px;
+    height:95%;
+    background:#d6c8a8;
+    border-radius:8px 0 0 8px;
+}
+
+.page:hover{
+    transform:translateY(-8px);
+    transition:.4s;
+}
+
+/* ===================================
+   TABLE OF CONTENTS
+=================================== */
+
+#contents ol{
+    font-size:22px;
+}
+
+#contents li{
+    padding:8px;
+    border-bottom:1px dashed #ccc;
+}
+
+#contents li:hover{
+    color:#0057b8;
+    cursor:pointer;
+}
+
+/* ===================================
+   SCROLLBAR
+=================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0057b8;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#ddd;
+}/* ===================================
+   CARDS
+=================================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:35px;
+}
+
+.card{
+    background:#ffffff;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    transition:0.35s ease;
+    border-top:5px solid #0057b8;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+}
+
+.card i{
+    font-size:45px;
+    color:#0057b8;
+    margin-bottom:15px;
+}
+
+.card h3{
+    font-size:24px;
+    margin-bottom:15px;
+    color:#003366;
+}
+
+.card p{
+    font-size:16px;
+    color:#555;
+}
+
+/* ===================================
+   HEROES
+=================================== */
+
+#heroes .card{
+    border-top:5px solid #FFD700;
+}
+
+/* ===================================
+   TOURISM
+=================================== */
+
+#tourism ul{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+    margin-top:20px;
+    list-style:none;
+}
+
+#tourism li{
+    background:#f8f8f8;
+    padding:18px;
+    border-left:6px solid #0057b8;
+    border-radius:8px;
+    transition:.3s;
+}
+
+#tourism li:hover{
+    background:#0057b8;
+    color:white;
+}
+
+/* ===================================
+   LANGUAGE LIST
+=================================== */
+
+#languages ul{
+    list-style:square;
+}
+
+#languages li{
+    margin-bottom:15px;
+    font-size:20px;
+}
+
+/* ===================================
+   CULTURE LIST
+=================================== */
+
+#culture ul{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+#culture li{
+    background:#faf7ef;
+    padding:15px;
+    border-radius:10px;
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+    margin-top:80px;
+}
+
+footer h2{
+    font-family:'Playfair Display',serif;
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:10px 0;
+    color:#ddd;
+}
+
+/* ===================================
+   IMAGE STYLE
+=================================== */
+
+img{
+    max-width:100%;
+    display:block;
+    border-radius:12px;
+}
+
+.image-box{
+    margin:30px 0;
+    overflow:hidden;
+    border-radius:12px;
+}
+
+.image-box img{
+    transition:0.5s;
+}
+
+.image-box img:hover{
+    transform:scale(1.05);
+}
+
+/* ===================================
+   SECTION ANIMATION
+=================================== */
+
+.page{
+    animation:fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ===================================
+   BUTTON HOVER
+=================================== */
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* ===================================
+   LINKS
+=================================== */
+
+a{
+    transition:.3s;
+}
+/* Active Navigation */
+
+nav ul li a.active{
+    color:#FFD700;
+    border-bottom:2px solid #FFD700;
+    padding-bottom:5px;
+}
